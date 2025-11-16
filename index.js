@@ -1,10 +1,10 @@
-// At the top, add history array from localStorage
+// History array added from localStorage
 let history = JSON.parse(localStorage.getItem("history") || "[]");
 
 function updateHistory(prompt) {
     if (!prompt) return;
     history.push(prompt);
-    if (history.length > 5) history.shift(); // keep only last 5
+    if (history.length > 5) history.shift();
     localStorage.setItem("history", JSON.stringify(history));
     renderHistory();
 }
@@ -27,7 +27,6 @@ function renderHistory() {
         });
     });
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("submitBtn").addEventListener("click", askAI);
     setupCopy();
@@ -76,7 +75,7 @@ async function askAI() {
         const data = await res.json();
         let raw = data?.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
-        // This is the actual text copied
+        // The copied text
         aiResponse.innerText = raw;
 
         // Format for display

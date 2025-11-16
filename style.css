@@ -87,6 +87,7 @@ textarea {
 #copyBtn:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+
 /* Media Screen*/
 @media (min-width: 601px) and (max-width: 1024px) {
     .container {

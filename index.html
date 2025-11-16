@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Basic Meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meryx AI</title>
+
+        <meta
+            name="description"
+            content="Get personalized Christmas gift suggestions instantly! Enter who you're shopping for and let our AI recommend the perfect festive gifts."
+        />
+        <meta
+            name="keywords"
+            content="Christmas gifts, gift ideas, AI gift recommender, holiday shopping, festive presents"
+        />
+        <meta name="author" content="iDev" />
+
+        <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+        <meta
+            property="og:title"
+            content="Meryx AI | Christmas Gift Recommender 🎄"
+        />
+        <meta
+            property="og:description"
+            content="Find the perfect Christmas gifts with our AI-powered recommender. Fast, fun, and personalized!"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:image" content="preview.jpg" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Meryx AI | Christmas Gift Recommender 🎄"
+        />
+        <meta
+            name="twitter:description"
+            content="Find the perfect Christmas gifts with our AI-powered recommender. Fast, fun, and personalized!"
+        />
+        <meta name="twitter:image" content="preview.jpg" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <!--- Stylesheet-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css"
+            integrity="sha512-ajhUYg8JAATDFejqbeN7KbF2zyPbbqz04dgOLyGcYEk/MJD3V+HJhJLKvJ2VVlqrr4PwHeGTTWxbI+8teA7snw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <header>
+            <logo>
+                <h1>Meryx AI 🌲</h1>
+            </logo>
+        </header>
+        <div class="container">
+            <h1>Christmas Gift Recommender</h1>
+
+            <div class="historyBox" style="margin-bottom: 10px"></div>
+
+            <textarea id="userInput" placeholder="Type something..."></textarea>
+            <button id="submitBtn">Ask AI 🎁</button>
+
+            <div id="responseBox">
+                <p id="userMessage">AI Suggestions will appear here...</p>
+                <p id="aiDisplay"></p>
+                <p id="aiResponse" style="display: none"></p>
+            </div>
+
+            <button id="copyBtn"><i class="fas fa-copy"></i>Copy</button>
+        </div>
+
+        <!--- JavaScript --->
+        <script src="index.js"></script>
+    </body>
+</html>

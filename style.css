@@ -1,0 +1,116 @@
+body {
+    background: #f7f3e9;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+logo h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #e63946;
+    font-size: 2rem;
+    margin: 15px 20px;
+}
+.container {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e63946;
+    margin: 5%;
+    overflow-x: hidden;
+}
+
+.container h1 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #e63946;
+    font-size: 1.5rem;
+}
+textarea {
+    width: 95%;
+    height: 100px;
+    outline: none;
+    border: 2px solid #e63946;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-left: 5%;
+    font-size: 1rem;
+}
+#submitBtn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #459d4b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-out;
+}
+#submitBtn:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+#submitBtn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 0 #2e7d32;
+}
+
+#responseBox {
+    margin-top: 20px;
+    background: #f1faee;
+    padding: 15px;
+    border-left: 5px solid #459d4b;
+    border-radius: 10px;
+    min-height: 60px;
+    font-size: 14px;
+}
+#copyBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    color: #459d4b;
+    background: #f3f4f6;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#copyBtn:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+/* Media Screen*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #responseBox {
+        width: 95%;
+        margin: 5%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        flex-direction: column;
+        width: 50%;
+    }
+    #responseBox {
+        width: 95%;
+        margin: 5%;
+    }
+}

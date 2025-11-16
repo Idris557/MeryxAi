@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meryxai.netlify.app/sitemap.xml
